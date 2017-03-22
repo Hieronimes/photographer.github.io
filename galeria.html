@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Superslides - A fullscreen slider for jQuery</title>
+  <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet"  href="css/lightGallery.css"/>
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+		}
+		.gallery li {
+			position: relative;
+			z-index: 1;
+			cursor: pointer;
+			background-color: rgb(0,0,0);
+			height:163px;
+			width:163px;
+			margin-right:16px;
+			margin-bottom:15px;
+			float:left;
+			overflow:hidden;
+		}
+		.gallery li a {
+			overflow: hidden;
+			height: 100%;
+		}
+		.gallery li a img {
+			width:163px; 
+			height:163px;
+			-webkit-transition: all 0.8s ease-in-out;
+			transition: all 0.8s ease-in-out;
+		}
+		
+		.gallery li a img:hover {
+			-webkit-transform: scale(1.5) ;
+			transform: scale(1.5) ;
+			opacity: 0.3;
+		}
+		
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/lightGallery.js"></script>
+    <script>
+    	 $(document).ready(function() {
+			$("#light-gallery").lightGallery();
+		});
+    </script>
+</head>
+<body>
+
+		<h1 class="napis">
+			Fotografia Marek Niemyjski
+		</h1>
+
+		
+	  <div id="slides">
+			<div class="slides-container">
+			  <img style="position:fixed" src="images/10.jpg" alt="caesar">
+			  <img src="images/jane.jpg" alt="Jane">
+			  <img src="images/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli">
+			  <img src="images/affinity.jpeg" width="1024" height="685" alt="Affinity">
+			</div>
+		</div>
+
+
+	  
+	<input type="checkbox" id="menu" />
+<div class="menu">
+        <label for="menu" class="menu-trigger" >Menu</label>
+  <label for="menu" class="menu-bar" >
+    <ul>
+      <li id="one"><a href="index.html">Strona główna</a>
+      </li>
+      <li id="two"><a href="o-mnie.html">O mnie</a>
+      </li>
+	  <li id="three"><div class="mega"><a href="galeria.html">Galeria</a></div>
+      </li>
+	  	  <li id="four"><a href="kontakt.php">Kontakt</a>
+      </li>
+      <li id="five">
+        <label for="menu">wyłącz</label>
+      </li>
+    </ul>
+	
+</div>
+		
+
+
+
+	  
+
+		
+		
+		
+		
+		
+
+
+
+  <script src="javascripts/jquery.easing.1.3.js"></script>
+  <script src="javascripts/jquery.animate-enhanced.min.js"></script>
+  <script src="dist/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $('#slides').superslides({
+      animation: 'fade'
+    });
+	  </script>
+	<script type="text/javascript">
+	var element = document.getElementById("one");
+	element.classList.add("super");
+
+	var element = document.getElementById("two");
+	element.classList.add("super2");
+	
+		var element = document.getElementById("three");
+	element.classList.add("super3");
+
+	var element = document.getElementById("four");
+	element.classList.add("super4");
+	
+	var element = document.getElementById("five");
+	element.classList.add("super5");
+</script>	
+  
+
+	  
+	
+		<div class="galeria">
+			<h1>Galeria 4-kolumnowa</h1>	
+			
+			<p>Poniżej znajdują się fotografie prezentujące krajobraz wschodniej Polski. Zdjęcia były robione na 
+przełomie 2013-2015 roku. Zapraszam do wspólnej podróży.</p>
+				<ul id="light-gallery" class="gallery">
+					<li data-src="images/1.jpg"><a><img src="images/1.jpg"></a></li>
+					<li data-src="images/2.jpg"><a><img src="images/2.jpg"></a></li>
+					<li data-src="images/3.jpg"><a><img src="images/3.jpg"></a></li>
+					<li data-src="images/4.jpg" class="last"><a><img src="images/4.jpg"></a></li>
+										<li data-src="images/1.jpg"><a><img src="images/5.jpg"></a></li>
+					<li data-src="images/6.jpg"><a><img src="images/6.jpg"></a></li>
+					<li data-src="images/7.jpg"><a><img src="images/7.jpg"></a></li>
+					<li data-src="images/8.jpg" class="last"><a><img src="images/8.jpg"></a></li>
+					<li data-src="images/9.jpg"><a><img src="images/9.jpg"></a></li>
+					<li data-src="images/11.jpg"><a><img src="images/11.jpg"></a></li>
+					<li data-src="images/12.jpg"><a><img src="images/12.jpg"></a></li>
+					<li data-src="images/13.jpg" class="last"><a><img src="images/13.jpg"></a></li>
+															<li data-src="images/14.jpg"><a><img src="images/14.jpg"></a></li>
+					<li data-src="images/15.jpg"><a><img src="images/15.jpg"></a></li>
+					<li data-src="images/16.jpg"><a><img src="images/16.jpg"></a></li>
+					<li data-src="images/17.jpg" class="last"><a><img src="images/17.jpg"></a></li>
+															<li data-src="images/18.jpg"><a><img src="images/18.jpg"></a></li>
+					<li data-src="images/19.jpg"><a><img src="images/19.jpg"></a></li>
+					<li data-src="images/20.jpg"><a><img src="images/20.jpg"></a></li>
+					<li data-src="images/21.jpg" class="last"><a><img src="images/21.jpg"></a></li>
+															<li data-src="images/22.jpg"><a><img src="images/22.jpg"></a></li>
+					<li data-src="images/26.jpg"><a><img src="images/26.jpg"></a></li>
+					<li data-src="images/27.jpg"><a><img src="images/27.jpg"></a></li>
+					<li data-src="images/28.jpg" class="last"><a><img src="images/28.jpg"></a></li>		
+				</ul>
+				
+				<section></section>
+				<div class="">
+			<footer> © 2015 Keres Theme</footer>
+				</div>
+		</div>	
+
+
+		  
+	  
+	  
+</body>
+</html>
